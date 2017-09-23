@@ -3,13 +3,22 @@ title: Window Location
 ---
 ## Window Location
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/javascript/window-location/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+You can use JavaScript to control the browser. To begin with, you can get the browser to tell you its current location
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
+var url = window.location.href;
 
-<!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+For example, if the browser is currently at https://github.com/freeCodeCamp/guides the statement above will assign the string "https://github.com/freeCodeCamp/guides" to the variable url
 
-#### More Information:
-<!-- Please add any articles you think might be helpful to read before writing the article -->
+You can also get pieces of this url.
 
+For example, if the you want to get the domain name of url. You can use
 
+var domainName = window.location.hostname;
+
+In the example, the string "github.com" is assigned to the variable domainName. "http://", the path, and the anchor are omitted.
+
+If you want to get the pathname of the url. You can use
+
+var pathname = window.location.pathname;
+
+In the example, the string "/freeCodeCamp/guides" is assigned to the variable pathname
