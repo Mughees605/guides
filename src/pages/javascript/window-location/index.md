@@ -10,7 +10,7 @@ var url = window.location.href;
 For example, if the browser is currently at https://github.com/freeCodeCamp/guides the statement above will assign the string "https://github.com/freeCodeCamp/guides" to the variable url
 
 You can also get pieces of this url.
-
+ 
 For example, if the you want to get the domain name of url. You can use
 
 var domainName = window.location.hostname;
